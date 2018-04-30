@@ -26,6 +26,6 @@ Time spent: **6** hours spent in total
 ### Required: Demonstration
 
 - [ ] An example of the data captured by the honeypot (example: IDS logs including IP, request paths, alerts triggered)
-	*
+	*	https://github.com/bonliu/Cybersecurity_week9/blob/master/session.json
 - [ ] A screen-cap of the attack being conducted
 	![attack](https://user-images.githubusercontent.com/31838335/39412737-28b55fa2-4bef-11e8-9fc8-3bab4b52a54f.gif)
