@@ -12,24 +12,20 @@ Time spent: **6** hours spent in total
   Then I run the Command in the honeypot VM. After that, I simply read the log file to see how many attacks and what kinds of attack 
   the honey pot it captured.
 - [ ] A specific, reproducible honeypot setup, ideally automated. There are several possibilities for this:
-	- Alternatively, **detailed** notes added to the `README.md` regarding the setup, requirements, features, etc.
+	- In the gcloud console, run:
+		* sudo apt-get install -y git
+		* cd /opt
+		* sudo git clone https://github.com/RedolentSun/mhn.git
+		* cd mhn
+		* sudo ./install.sh
+	- Go back to Google Cloud Plantform webpage and edit the firewall rule:
+		* click default-allow-http
+		* change protocols and port to **Allow all**
+		
 
 ### Required: Demonstration
 
-- [ ] A basic writeup of the attack (what offensive tools were used, what specifically was detected by the honeypot)
 - [ ] An example of the data captured by the honeypot (example: IDS logs including IP, request paths, alerts triggered)
+	*
 - [ ] A screen-cap of the attack being conducted
-
-### Stretch Features
-- Honeypot
-	- [ ] HTTPS enabled (self-signed SSL cert)
-	- [ ] A web application with both authenticated and unauthenticated footprint
-	- [ ] Database back-end
-	- [ ] Custom exploits (example: intentionally added SQLI vulnerabilities)
-	- [ ] Custom traps (example: modified version of known vulnerability to prevent full exploitation)
-	- [ ] Custom IDS alert (example: email sent when footprinting detected)
-	- [ ] Custom incident response (example: IDS alert triggers added firewall rule to block an IP)
-- Demonstration
-	- [ ] Additional attack demos/writeups
-	- [ ] Captured malicious payload
-	- [ ] Enhanced logging of exploit post-exploit activity (example: attacker-initiated commands captured and logged)
+	![attack](https://user-images.githubusercontent.com/31838335/39412737-28b55fa2-4bef-11e8-9fc8-3bab4b52a54f.gif)
